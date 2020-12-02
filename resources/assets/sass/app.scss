@@ -1,0 +1,43 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+// Variables
+@import "variables";
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/trumbowyg/dist/ui/sass/trumbowyg";
+@import "node_modules/select2/dist/css/select2";
+@import "node_modules/select2-bootstrap-theme/src/select2-bootstrap";
+@import "node_modules/font-awesome/scss/font-awesome";
+
+@import "pages/home";
+@import "pages/comment";
+@import "pages/childrenpage";
+
+@import "pages/post";
+
+body {
+  background-color: white;
+}
+
+.user-blocked {
+  color: #8a6d3b;
+  text-decoration: line-through;
+}
+
+//Styles the map
+#map-canvas {
+  height: 900px;
+  width: 800px;
+  margin: auto;
+}
+
+// Disables the google logo and copyright message
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+  display:none;
+}
+.gmnoprint div {
+  background:none !important;
+}
